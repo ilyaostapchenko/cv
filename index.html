@@ -4,89 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <title color='red'>Ilya CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table cellspacing='15'>
-        <tr>
-            <td>
-                <img src="IMG_20200106_223917_240.jpg" alt="Ilya Mykolayovych" width="200">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <a href="http://127.0.0.1:5500/?"><img src="IMG_20200106_223917_240.jpg" alt="Ilya Mykolayovych"
+                    class="avatar"></a>
+
+            <div class="about-user">
                 <h1>Ilya Ostapchenko</h1>
-                <p><em>I millitary officer</em></p>
+                <p>I'm millitary officer</p>
                 <p>I'm like <strong>eating, sleeping, ha-ha-ha</strong>
                     and <strong>programing code</strong>.</p>
-            </td>
-        </tr>
-    </table>
+                <h4>My social live in:</h4>
 
-    <hr>
+                <a href="https://t.me/ilyamykolayovych" target="_blank">Telegram</a> |
+                <a href="https://instagram.com/ilyaostap4enko" target="_blank">Instagram</a> |
+                <a href="https://github.com/ilyaostapchenko/cv" target="_blank">GitHub</a>
+            </div>
+        </div>
 
-    <h2>My social live in:</h2>
-    <ul>
-        <li><a href="https://t.me/ilyamykolayovych" target="_blank">Telegram</a></li>
-        <li><a href="https://instagram.com/ilyaostap4enko" target="_blank">Instagram</a></li>
-    </ul>
+        <div class="card bg-yellow">
+            <h2>I preference</h2>
+            <ol class="list_of_preference">
+                <li>Sport: workout, running</li>
+                <li>Coocking</li>
+                <li>Train a dog</li>
+                <li>Active recreation</li>
+            </ol>
+        </div>
 
-    <hr>
+        <div class="card bg-green">
+            <h2>An experience</h2>
+            <table class="table">
+                <tr>
+                    <td>Millitary soldat</td>
+                    <td>Kiev</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Millitary cadet</td>
+                    <td>Kiev</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Millitary officer</td>
+                    <td>Dnepropetrovsk</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Millitary officer</td>
+                    <td>Dnepropetrovsk</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+        </div>
 
-    <h2>I preference:</h2>
-    <ol>
-        <li>Sport: workout, running</li>
-        <li>Coocking</li>
-        <li>Train a dog</li>
-        <li>Active recreation</li>
-    </ol>
+        <div class="card bg-red">
+            <h2>Likes resources</h2>
+            <ul class="resources_list">
+                <li><a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Vladilen Minin courses</a></li>
+                <li><a href="https://developer.mozilla.org/ru/" target="_blank">Resources for developers, by
+                        developers.</a></li>
+            </ul>
+        </div>
 
-    <hr>
-    
-    <h2>Likes resources</h2>
-    <ul>
-        <li><a href="list_of_links.html">View page</a></li>
-    </ul>
+        <div class="contact">
+            <h2>Feedback</h2>
+            <form action="/" autocomplete="off">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">name:</label>
+                        <input type="text" placeholder="enter your name..." id="name" autocomplete="off">
+                    </div>
 
-    <hr>
+                    <div class="form-group">
+                        <label for="email">email:</label>
+                        <input type="email" placeholder="enter your email..." id="name" autocomplete="off">
+                    </div>
+                </div>
 
-    <h2>An experience</h2>
-    <table >
-        <tr>
-            <th>Year</th>
-            <th>Position</th>
-            <th>City of job</th>
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>Millitary soldat</td>
-            <td>Kiev</td>
-        </tr>
-        <tr>
-            <td>2015</td>
-            <td>Millitary cadet</td>
-            <td>Kiev</td>
-        </tr>
-        <tr>
-            <td>2020</td>
-            <td>Millitary officer</td>
-            <td>Dnepropetrovsk</td>
-        </tr>
-    </table>
+                <div class="form-group">
+                    <label for="text">text:</label>
+                    <textarea id="text" cols="22" rows="4" placeholder="Your text..."></textarea>
+                </div>
 
-    <hr>
-    
-    <h2>Feedback</h2>
-    <form action="/">
-        <label for="name">Name:</label>
-        <input type="text" placeholder="Enter your name..." id="name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" placeholder="@your email..." id="name">
-        <br>
-        <label for="text">Text:</label>
-        <textarea id="text" cols="22" rows="5" placeholder="Your text..."></textarea>
-        <br>
-        <input type="submit" value="Send">
-    </form>
+                <input type="submit" value="Send" class="btn">
+            </form>
+            <!-- <form action="/">
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                <input type="image" src="IMG_20200106_223917_240.jpg" alt="" height="200" >
+            </form> -->
+        </div>
+
+        <div style="margin-bottom: 200px;"></div>
+
+    </div>
 </body>
 
 </html>
